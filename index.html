@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Ice Cream Land Survey</h1>
+        <p id="description">Let Us Know Your Favorite Ice Cream Flavor!</p>
+      </header>
+      <form id="survey-form" class="form-style">
+        <div class="form-field">
+          <label id="name-label" for="name">Name </label>
+          <input
+            id="name"
+            type="text"
+            name="user-name"
+            class="input-style"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label id="email-label" for="email">Email </label>
+          <input
+            id="email"
+            type="email"
+            name="user-email"
+            class="input-style"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label id="number-label" for="number">Age </label>
+          <input
+            id="number"
+            type="number"
+            name="user-age"
+            class="input-style"
+            placeholder="Age"
+            max="120"
+            min="3"
+          />
+        </div>
+        <div class="form-field">
+          <p>What is your favorite flavor from our selection?</p>
+          <select
+            id="dropdown"
+            name="flavors"
+            class="input-style"
+            placeholder="Select a flavor"
+          >
+            <option value="vanilla">Vanilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Strawberry">Strawberry</option>
+            <option value="Snickers">Snickers</option>
+            <option value="Coffee">Coffee</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <p>How would you rate our service?</p>
+          <label>
+            <input
+              id="service"
+              type="radio"
+              name="rating"
+              value="amazing"
+              checked
+            />Great
+          </label>
+          <label>
+            <input
+              id="service"
+              type="radio"
+              name="rating"
+              value="Average"
+            />Average
+          </label>
+          <label>
+            <input id="service2" type="radio" name="rating" value="Bad" />Bad
+          </label>
+        </div>
+        <div class="form-field">
+          <p>Which new flavor/s would you like us to add to our selection?</p>
+          <label>
+            <input
+              id="checkboxes"
+              type="checkbox"
+              name="new-nutella"
+              value="nutella"
+            />Nutella
+          </label>
+          <label>
+            <input
+              id="checkboxes"
+              type="checkbox"
+              name="new-bubblegum"
+              value="bubblegum"
+            />Bubblegum
+          </label>
+          <label>
+            <input
+              id="checkboxes"
+              type="checkbox"
+              name="new-LemonLime"
+              value="lemon-lime"
+            />Lemon Lime
+          </label>
+          <label>
+            <input
+              id="checkboxes"
+              type="checkbox"
+              name="new-stracciatella"
+              value="stracciatella"
+            />Stracciatella
+          </label>
+          <label>
+            <input
+              id="checkboxes"
+              type="checkbox"
+              name="new-dulce-de-leche"
+              value="dulce-de-leche"
+            />Dulce de Leche
+          </label>
+          <label>
+            <input
+              id="checkboxes"
+              type="checkbox"
+              name="new-rum-raisins"
+              value="rum-raisins"
+            />Rum Raisins
+          </label>
+        </div>
+        <div class="form-field">
+          <label id="explanation" for="improvements">Any suggestions? </label>
+          <textarea
+            id="improvements"
+            name="requests"
+            class="input-style"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-field">
+          <button id="submit" type="submit" value="Submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
